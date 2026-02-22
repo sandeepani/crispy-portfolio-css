@@ -336,7 +336,8 @@ section h3:hover .anchor-icon {
     font-size: 1rem;
 }
 
-.project-image-container {
+.project-image-container,
+.article-image-container {
     /* max-height: 250px; */
     overflow:hidden;
     display: grid;
@@ -356,7 +357,8 @@ section h3:hover .anchor-icon {
     aspect-ratio: 16 / 10;
 }
 
-.project-image-container img {
+.project-image-container img,
+.article-image-container img {
     object-fit : cover;
     width: 100%;
     height: 100%;
@@ -504,7 +506,8 @@ header h1 {
             display: none;
         }
 
-        .project-image-container{
+        .project-image-container,
+        .article-image-container {
             order: 0;
         }
 
