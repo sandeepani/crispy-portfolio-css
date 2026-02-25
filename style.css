@@ -244,11 +244,6 @@ padding-bottom: 1rem;
     border-radius: 0.5rem;
         overflow: hidden;
 
-/* gemini suggessions */
-    backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-        /* Safari support */
-        border: 0px solid rgba(255, 255, 255, 0.1);
 }
 
 .experience-item {
@@ -267,7 +262,11 @@ padding-bottom: 1rem;
     background: var(--primary-color-2);
     /* padding: 0.75rem; */
     
-    /* gemini suggessions */
+    /* gemini suggessions *//* gemini suggessions */
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        /* Safari support */
+        border: 0px solid rgba(255, 255, 255, 0.1);
         transform: translateY(-4px) scale(1.02);
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
