@@ -1,13 +1,13 @@
 :root {
-    --primary-color: #0f172a;
-    --primary-color-2: #0f172ab1;
-    --secondary-color: #a0aec0;
-    --secondary-color-2: #a0aec083;
-    --accent-color: #5eead4;
-    --highlight-color: #e2e8f0;
-    --underlay-color: #5D5C8C;
-    --tag-color: #2dd4bf1a;
-    --sticky-background-color: #101A31;
+  --primary-color: #0d1b1e;
+  --primary-color-2: #0d1b1eb1;
+  --secondary-color: #94a3a0;
+  --secondary-color-2: #94a3a083;
+  --accent-color: #7ddfa5;
+  --highlight-color: #e0e8e7;
+  --underlay-color: #4a6b5e;
+  --tag-color: #7ddfa51a;
+  --sticky-background-color: #14282b;
 }
 
 * {
@@ -61,7 +61,7 @@ ul {
     inset: 0;
     opacity: 0.15;
     background-image: url("images/beautiful-blooming-flowers-spring-season.jpg");
-    background-position: top center;
+    background-position: bottom center;
         /* Positions image at the corner */
     transition-duration: 200ms;
 }
@@ -120,6 +120,20 @@ header h4,
 
 header h1 {
     font-weight: 600;
+    padding: 0.75rem;
+}
+
+header h1:hover {
+    transition: transform 0.200ms ease;
+    background: var(--primary-color-2);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        /* Safari support */
+        border: 0px solid rgba(255, 255, 255, 0.1);
+        transform: translateY(-4px) scale(1.02);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    color: var(--accent-color);
 }
 
 header h4 {
