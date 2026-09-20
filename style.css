@@ -8,6 +8,8 @@
   --underlay-color: #4a6b5e;
   --tag-color: #7ddfa51a;
   --sticky-background-color: #14282b;
+  --box-shadow-color: #0d1b1e1a;
+  --card-border-color: #e0e8e71a
 }
 
 * {
@@ -59,11 +61,14 @@ ul {
     position: fixed;
     background: var(--underlay-color);
     inset: 0;
-    opacity: 0.15;
-    background-image: url("images/beautiful-blooming-flowers-spring-season.jpg");
-    background-position: bottom center;
+    opacity: 0.14;
+    background-image: url("images/Bamboo_Forest_Background.png");
+    background-position: center center;
         /* Positions image at the corner */
     transition-duration: 200ms;
+    background-size: cover;        /* stretches to fill, preserving aspect ratio */
+  background-repeat: no-repeat;  /* prevents tiling */
+
 }
 
 .link {
@@ -120,7 +125,7 @@ header h4,
 
 header h1 {
     font-weight: 600;
-    padding: 0.75rem;
+    padding: 0rem, 0rem, 0.75rem, 0rem;
 }
 
 header h1:hover {
@@ -129,9 +134,9 @@ header h1:hover {
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
         /* Safari support */
-        border: 0px solid rgba(255, 255, 255, 0.1);
+        border: 0px solid var(--card-border-color);
         transform: translateY(-4px) scale(1.02);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 10px 30px var(--box-shadow-color);
     border-radius: 0.5rem;
     color: var(--accent-color);
 }
@@ -280,9 +285,9 @@ padding-bottom: 1rem;
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
         /* Safari support */
-        border: 0px solid rgba(255, 255, 255, 0.1);
+        border: 0px solid var(--card-border-color);
         transform: translateY(-4px) scale(1.02);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 10px 30px var(--box-shadow-color);
 }
 
 /* 
@@ -410,6 +415,12 @@ footer a {
     place-items: center;
     border-radius: 100%;
     overflow: hidden;
+}
+
+.scroll-to-top:hover {
+    transition: transform 0.200ms ease;
+        transform: translateY(-4px) scale(1.02);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 footer p {
