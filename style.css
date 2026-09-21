@@ -1,15 +1,15 @@
 :root {
-  --primary-color: #0d1b1e;
-  --primary-color-2: #0d1b1eb1;
-  --secondary-color: #94a3a0;
-  --secondary-color-2: #94a3a083;
-  --accent-color: #7ddfa5;
-  --highlight-color: #e0e8e7;
-  --underlay-color: #4a6b5e;
-  --tag-color: #7ddfa51a;
-  --sticky-background-color: #14282b;
-  --box-shadow-color: #0d1b1e1a;
-  --card-border-color: #e0e8e71a
+  --primary-color: #1a1423;
+  --primary-color-2: #1a1423b1;
+  --secondary-color: #a89bb3;
+  --secondary-color-2: #a89bb383;
+  --accent-color: #c9a7eb;
+  --highlight-color: #eae4f0;
+  --underlay-color: #5a4b6b;
+  --tag-color: #c9a7eb1a;
+  --sticky-background-color: #241d30;
+  --box-shadow-color: #1a14231a;      
+  --card-border-color: #eae4f01a;    
 }
 
 * {
@@ -61,9 +61,9 @@ ul {
     position: fixed;
     background: var(--underlay-color);
     inset: 0;
-    opacity: 0.13;
-    background-image: url("images/Bamboo_Forest_Background.png");
-    background-position: bottom right;
+    opacity: 0.15;
+    background-image: url("images/beautiful-blooming-flowers-spring-season.jpg");
+    background-position: top center;
         /* Positions image at the corner */
     transition-duration: 200ms;
    /* background-size: cover; */        /* stretches to fill, preserving aspect ratio */
@@ -189,7 +189,7 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    gap: 6rem;
+    gap: 3rem;
 }
 
 section {
