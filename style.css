@@ -236,7 +236,7 @@ section h2,
 }
 
 .intro{
-padding-bottom: 1rem;
+padding-bottom: 2rem;
 }
 
 .experience-list,
@@ -499,8 +499,8 @@ header h1 {
         nav {
             display: flex;
             flex-direction: column;
-            padding-top: 5rem;
-            padding-bottom: 5.5rem;
+            padding-top: 2.5rem;
+            padding-bottom: 3rem;
             flex: 1;
         }
 
